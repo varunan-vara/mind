@@ -1,6 +1,9 @@
 # mind
 
-A new Flutter project.
+A Potential App Idea - undecided README details
+
+
+Flutter documentation:
 
 ## Getting Started
 
