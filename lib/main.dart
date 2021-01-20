@@ -102,13 +102,13 @@ class _MyAppState extends State<MyApp> {
                   primaryColor: (colourMode != 0) ? Color(0xff00b4d8) : Colors.red[400],
                 ),
       routes: {
-        //main 5 tabbed page
+        //main search page
         "/": (context) => MainApp(),
         //when a context menu is tapped, the popup following it. will include
         //super widgets
         "/popup": (context) => PopUp(),
         //In the messages tab, this will open up messages
-        "/messages": (context) => Messages(),
+        "/webview": (context) => WebView(),
       },
       initialRoute: "/",
     );
@@ -128,14 +128,14 @@ class PopUp extends StatelessWidget {
 }
 
 //Temp widget to make navigation work
-class Messages extends StatefulWidget {
-  Messages({Key key}) : super(key: key);
+class WebView extends StatefulWidget {
+  WebView({Key key}) : super(key: key);
 
   @override
   _MessagesState createState() => _MessagesState();
 }
 
-class _MessagesState extends State<Messages> {
+class _MessagesState extends State<WebView> {
   @override
   Widget build(BuildContext context) {
     return Container(
